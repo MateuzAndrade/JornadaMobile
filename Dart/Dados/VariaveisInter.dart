@@ -9,9 +9,9 @@ void main(){
     print(saldoDaConta);    
 
     //Boas prátricas para instanciar inteiro
-    var z = 100;
-    //sera instanciada depois
-    late int b;
+    // var z = 100;
+    // //sera instanciada depois
+    // late int b;
 
     var a= 5;
     //adicionar mais um

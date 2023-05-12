@@ -1,4 +1,3 @@
-import 'dart:io';
 
 void main(List<String> args) {
   var idades = [1, 2, 3];
