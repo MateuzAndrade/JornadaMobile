@@ -5,7 +5,7 @@ void main() {
   //Declaração
 
   //Tipo var com valor inicial;
-  var text = "Texto";
+  //var text = "Texto";
 
   //Tipo Explicito
   String nome;
@@ -19,10 +19,10 @@ void main() {
 
   // ---------------------Boas Práticas------------------------
   //Bom
-  var modelo = "GOL";
+  //var modelo = "GOL";
   
   //Ruim
-  var ano;
-  ano = 2022;
-  String tipo = "carro";
+  //var ano;
+  //ano = 2022;
+  //String tipo = "carro";
 }

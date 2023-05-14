@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   // tem que serdo mesmo tipo
   final pessoa = Map<String, dynamic>();
