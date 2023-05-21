@@ -12,4 +12,3 @@ void main() {
   ));
 }
 
-class AppWifget
