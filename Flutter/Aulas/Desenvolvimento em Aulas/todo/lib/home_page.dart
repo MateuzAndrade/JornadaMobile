@@ -16,13 +16,13 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home Help"),
-      ),
-      body: Center(
-        child: Switch(
-            value: AppController.instance.isDartTheme,
-            onChanged: (valor) {
-              AppController.instance.changeTheme();
-            }),
+        actions: [CustomSwitcher()],
+      ),body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [
+          Text("Ola Mundo!")
+        ]),
       ),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add_shopping_cart),
@@ -32,5 +32,17 @@ class HomePageState extends State<HomePage> {
             });
           }),
     );
+  }
+}
+
+class CustomSwitcher extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return  Switch(
+            value: AppController.instance.isDartTheme,
+            onChanged: (valor) {
+              AppController.instance.changeTheme();
+            });
   }
 }
