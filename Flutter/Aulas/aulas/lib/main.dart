@@ -1,13 +1,7 @@
+import 'package:aulas/AulasApp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(AulasApp());
-}
-
-class AulasApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp();
-  }
+  runApp(const AulasApp());
 }
