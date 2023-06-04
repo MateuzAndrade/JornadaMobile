@@ -26,9 +26,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var counter = 0;
+
   @override
   Widget build(BuildContext context) {
+
+    final names = ["jose","Carlos"];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Aprendizado Flutter"),
@@ -36,18 +39,16 @@ class _HomePageState extends State<HomePage> {
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              for (var i = 0; i < 10;i++)
-                Container(
-                  height: 100,
-                  width: 100,
-                  margin: const EdgeInsets.all(12),
-                  color: Colors.red,
-                ),
-            ],
-          ),
+        child: ListView.builder(
+          itemCount: names.length,
+          itemBuilder: (context, index) {
+            return Container(
+              height: 100,
+              width: double.infinity,
+              margin: const EdgeInsets.all(12),
+              color: Colors.black26,
+            );
+          },
         ),
       ),
     );
